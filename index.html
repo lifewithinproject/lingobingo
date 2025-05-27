@@ -58,13 +58,16 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 0.9em;
+            font-size: 0.8em;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
+            hyphens: auto;
+            word-break: break-word;
+            white-space: normal; /* viktigt så texten får brytas på flera rader */
         }
 
         .bingo-cell:hover {
@@ -180,11 +183,8 @@
     <script>
         const terms = [
             'PMO', 'SAFe', 'MoSCoW', 'Effektmål', 'WBS', 'Rådgivande funktion',
-            'Styr-
-            funktion', 'EPM', 'Lednings-
-            funktion', 'DoD', 'Lean', 'Agil',
-            'SCOA', 'Extreme Programming (XP)', 'XLPM', 'Intresse-
-            analys', 'PROPS',
+            'Styrfunktion', 'EPM', 'Ledningsfunktion', 'DoD', 'Lean', 'Agil',
+            'SCOA', 'Extreme Programming (XP)', 'XLPM', 'Intresseanalys', 'PROPS',
             'SMART', 'PROJEKTiL', 'CCPM', 'PBS', 'PENG', 'Vattenfall',
             'Verkställande funktion', 'PDSA-cykel', 'SWOT', 'Stage-gate-modeller',
             'CPM', 'PERT', 'Projektmål', 'PPS', 'PRINCE2'
