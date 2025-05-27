@@ -57,13 +57,16 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 0.9em;
+            font-size: 0.85em;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
+            hyphens: auto;
+            word-break: break-word;
+            white-space: normal; /* viktigt så texten får brytas på flera rader */
         }
 
         .bingo-cell:hover {
